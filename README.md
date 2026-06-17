@@ -32,7 +32,7 @@ This repository defines the operating specification for an institutional-grade t
 ### Required Trading Workflow
 
 #### Step 1: Gather Data
-- Read XAUUSD from TradingView on M1, M5, M15, H1, H4
+- Read XAUUSD from TradingView on M1, M5, M15, H1, H4, D1
 - Read account information and positions from MT5
 - Retrieve open and pending orders
 
@@ -73,7 +73,7 @@ Always calculate:
 Never suggest:
 - Martingale
 - Grid recovery
-- Revenge trading
+- Revenge trading (emotion-driven retaliation trades after losses)
 - Increasing risk after losses
 - Averaging down into losing trades
 
@@ -141,3 +141,8 @@ BUY / SELL / WAIT
 Confidence: X/10
 Conditions that would invalidate this view:
 ```
+
+Confidence guide:
+- 1-3: Low confidence (weak confluence/conflicting signals)
+- 4-6: Moderate confidence (partial confluence, some uncertainty)
+- 7-10: High confidence (strong multi-timeframe confluence and risk-defined setup)
