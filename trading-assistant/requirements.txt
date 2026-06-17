@@ -1,0 +1,10 @@
+MetaTrader5
+pandas
+numpy
+scipy
+ta
+vectorbt
+pydantic
+pyyaml
+fastapi
+uvicorn
